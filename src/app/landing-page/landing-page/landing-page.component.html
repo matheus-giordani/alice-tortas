@@ -1,9 +1,11 @@
-<header>
+
+<header >
 
   <app-nav-bar></app-nav-bar>
 </header>
 
-<app-carousel></app-carousel>
+
+<app-carousel id="inicio"></app-carousel>
 <title>fruto & fruta</title>
 
 
@@ -13,11 +15,27 @@
 
 </section>
 
-<section class="color-section-cards" >
+<section class="color-section-cards" id="produtos">
 
   <app-cards></app-cards>
 </section>
 
+<footer class="bg-secondary p-3">
+  <p class="text-light m-0 text-center">contato:<a  class="text-light" href="mailto:email@frutafruto.com.br">email@frutafruto.com.br</a></p>
 
+</footer>
 
-  <p>contato:<a href="mailto:email@frutafruto.com.br">email@frutafruto.com.br</a></p>
+<script>
+  $(document).ready(function(){
+    // Adiciona um comportamento de rolagem suave a todas as tags <a> com um atributo href começando com #
+    $('a[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href'));
+      if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: target.offset().top
+        }, 3000);
+      }
+    });
+  });
+  </script>

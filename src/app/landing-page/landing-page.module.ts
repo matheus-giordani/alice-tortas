@@ -13,7 +13,7 @@ import { CardsComponent } from './cards/cards.component';
     LandingPageComponent,
     NavBarComponent,
     CarouselComponent,
-    CardsComponent
+    CardsComponent,
   ],
   imports: [
     CommonModule,
