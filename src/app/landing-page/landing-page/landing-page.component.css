@@ -2,10 +2,19 @@
 
 .cor-especial
 {
-  color: darkred;
+  color: #592E1F;
 }
 
 
-.color-section-cards{
+/* .color-section-cards{
   background-color: rgb(215, 192, 214);
+} */
+
+
+.gradiente
+{
+
+    background: linear-gradient(to bottom, #f7cdcd, #C7EAE7, #f19f9e);
+
+
 }

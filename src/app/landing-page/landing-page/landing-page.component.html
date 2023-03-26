@@ -8,34 +8,28 @@
 <app-carousel id="inicio"></app-carousel>
 <title>fruto & fruta</title>
 
+<section class="gradiente">
 
-<section >
-  <h1 class="text-center cor-especial pt-5">Receitas para economizar e ganhar saúde</h1>
-  <p class="text-center text-secondary pb-5">Nossas receitas ajudam você a aproveitar melhor os alimentos, economizar, ganhar tempo e praticidade</p>
+  <section >
+    <h1 class="text-center cor-especial pt-5">Receitas para economizar e ganhar saúde</h1>
+    <p class="text-center text-secondary pb-5">Nossas receitas ajudam você a aproveitar melhor os alimentos, economizar, ganhar tempo e praticidade</p>
 
-</section>
+  </section>
 
-<section class="color-section-cards" id="produtos">
+<section class="color-section-cards pt-5 pb-5" id="produtos">
 
   <app-cards></app-cards>
 </section>
+<section>
+  <app-do-your-self id="doYourSlf"></app-do-your-self>
+</section>
 
-<footer class="bg-secondary p-3">
+
+<footer class=" p-3">
   <p class="text-light m-0 text-center">contato:<a  class="text-light" href="mailto:email@frutafruto.com.br">email@frutafruto.com.br</a></p>
 
 </footer>
 
-<script>
-  $(document).ready(function(){
-    // Adiciona um comportamento de rolagem suave a todas as tags <a> com um atributo href começando com #
-    $('a[href^="#"]').on('click', function(event) {
-      var target = $(this.getAttribute('href'));
-      if( target.length ) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-          scrollTop: target.offset().top
-        }, 3000);
-      }
-    });
-  });
-  </script>
+
+
+</section>
