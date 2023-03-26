@@ -1,23 +1,22 @@
 .btn-cor-especial{
- background-color:rgb(188, 147, 170) ;
- color: white;
+ background-color:rgb(237, 198, 220) ;
+ color: #592E1F;
  position: relative;
   overflow: hidden;
   transform-style: preserve-3d;
   perspective: 1000px;
+  font-weight: bold;
 
 }
 
 .btn-cor-especial:hover {
   transform: rotateY(10deg) translateZ(50px);
   transform: scale(1.1);
+
 }
 
 
 
-.border-color-card{
-  border-color: rgb(166, 77, 126);
-}
 
 .card {
   position: relative;
@@ -30,10 +29,16 @@
 
 }
 
+.cor-especial
+{
+  color: #592E1F;
+}
+
 
 .img-card{
   object-fit: cover;
   height: 200px;
+  object-position: 0 88%;
 
 }
 

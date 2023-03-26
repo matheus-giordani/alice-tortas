@@ -6,6 +6,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CardsComponent } from './cards/cards.component';
+import { DoYourSelfComponent } from './do-your-self/do-your-self.component';
 
 
 @NgModule({
@@ -14,9 +15,11 @@ import { CardsComponent } from './cards/cards.component';
     NavBarComponent,
     CarouselComponent,
     CardsComponent,
+    DoYourSelfComponent,
   ],
   imports: [
     CommonModule,
+
     LandingPageRoutingModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
