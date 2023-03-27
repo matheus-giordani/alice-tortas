@@ -7,6 +7,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CardsComponent } from './cards/cards.component';
 import { DoYourSelfComponent } from './do-your-self/do-your-self.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,7 +20,7 @@ import { DoYourSelfComponent } from './do-your-self/do-your-self.component';
   ],
   imports: [
     CommonModule,
-
+    ReactiveFormsModule,
     LandingPageRoutingModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

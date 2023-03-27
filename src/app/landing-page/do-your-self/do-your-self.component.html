@@ -1,22 +1,22 @@
 <div class="container cor-especial ">
   <h1 class="text-center  pt-5">Faça você mesmo</h1>
   <p class="text-center text-secondary pb-5">Monte sua torta da forma que desejar escolha sua massa e seu recheio e ta pronto</p>
-  <form>
+  <form  [formGroup]="form" (ngSubmit)="submit()">
     <div class="row">
 
       <div class="col-12 col-sm-2">
         <label for="exampleFormControlSelect1">Massa</label>
-        <select class="form-control" id="exampleFormControlSelect1">
+        <select class="form-control" id="exampleFormControlSelect1" formControlName="massa" required>
           <option>Cookie</option>
-          <option>cookie chocolate</option>
-          <option>cookie Red Velvet</option>
+          <option>Cookie chocolate</option>
+          <option>Cookie Red Velvet</option>
           <option>Salgada</option>
 
         </select>
       </div>
       <div class="col-8 col-sm-8">
         <label for="exampleFormControlSelect1">Recheio</label>
-        <select class="form-control" id="exampleFormControlSelect1">
+        <select class="form-control" formControlName="recheio">
           <option>Chocolate ao leite</option>
           <option>Chocolate meio-amargo</option>
           <option>Chocolate branco</option>
@@ -27,7 +27,7 @@
 
       <div class="col-4 col-sm-2">
         <label for="exampleInputPassword1">Quantidade</label>
-        <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Quantidade">
+        <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Quantidade" formControlName="quantidade">
       </div>
 
     </div>
@@ -38,10 +38,16 @@
           class="form-control"
           id="exampleFormControlTextarea1"
           rows="3"
+          formControlName="comentario"
         ></textarea>
       </div>
 
     </div>
+
+      <div class="pt-2 justify-content-end">
+        <button type="submit" class="btn btn-cor-especial btn-lg" [disabled]="this.form.invalid">Submit</button>
+
+      </div>
 
   </form>
 </div>
