@@ -6,3 +6,21 @@
 label{
   font-size: large;
 }
+
+
+.btn-cor-especial{
+  background-color:rgb(237, 198, 220) ;
+  color: #592E1F;
+  position: relative;
+   overflow: hidden;
+   transform-style: preserve-3d;
+   perspective: 1000px;
+   font-weight: bold;
+
+ }
+
+ .btn-cor-especial:hover {
+   transform: rotateY(10deg) translateZ(50px);
+   transform: scale(1.1);
+
+ }
