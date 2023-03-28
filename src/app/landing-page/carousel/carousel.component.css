@@ -1,5 +1,5 @@
 .image-carousel{
-  object-fit:cover;
-  object-position: 0 67%;
-  height: 410px;
+  object-fit:fill;
+  object-position: 0 80%;
+  height: 400px;
 }
