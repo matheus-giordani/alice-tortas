@@ -32,7 +32,7 @@ export class CardsComponent implements OnInit {
     this.linkTortaChapeleiro = this.constructorRoute(
       `${horario} Gostaria de pedir uma Torta do Chapeleiro`
     );
-    this.linkTortaCoelho =  this.constructorRoute(
+    this.linkTortaCoelho = this.constructorRoute(
       `${horario} Gostaria de pedir uma Torta do Coelho Branco`
     );
   }
