@@ -4,9 +4,9 @@
   <form  [formGroup]="form" (ngSubmit)="submit()">
     <div class="row">
 
-      <div class="col-12 col-sm-2">
-        <label for="exampleFormControlSelect1">Massa</label>
-        <select class="form-control" id="exampleFormControlSelect1" formControlName="massa" required>
+      <div class="col-12 col-sm-4">
+        <label for="exampleFormControlSelect1" >Massa</label>
+        <select class="form-control" id="exampleFormControlSelect1"  formControlName="massa" required>
           <option>Invertida</option>
           <option>Tradicional</option>
           <option>Red Velvet</option>
@@ -14,7 +14,7 @@
 
         </select>
       </div>
-      <div class="col-8 col-sm-8">
+      <div class="col-12 col-sm-8">
         <label for="exampleFormControlSelect1">Recheio</label>
         <select class="form-control" formControlName="recheio">
           <option>Café</option>
@@ -23,6 +23,15 @@
           <option>Brigadeiro branco</option>
           <option>Brigadeiro de cream cheese</option>
           <option>Frango</option>
+        </select>
+      </div>
+
+      <div class="col-12 col-sm-10" *ngIf="condicao">
+        <label for="exampleFormControlSelect1">Adicionais</label>
+        <select  class="form-control" formControlName="adicionais">
+          <option>Catupiry</option>
+          <option>Requeijão</option>
+
         </select>
       </div>
 
