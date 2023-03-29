@@ -40,8 +40,8 @@ export class DoYourSelfComponent implements OnInit {
     \ud83c\udf6a *Massa:* ${(this.form.value).massa}
     \ud83c\udf6a *Recheio:* ${(this.form.value).recheio}
     \ud83c\udf6a *Quantidade:* ${(this.form.value).quantidade}
-    \ud83c\udf6a *Comentario:* ${((this.form.value).comentario) || ''}
     \ud83c\udf6a *Data do pedido:* ${this.getDate() }
+    \ud83c\udf6a *Comentario:* ${((this.form.value).comentario) || ''}
 
     `
     this.link = this.constructorRoute(this.message)

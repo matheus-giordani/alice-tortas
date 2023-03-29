@@ -1,11 +1,13 @@
 .btn-cor-especial{
  background-color:rgb(237, 198, 220) ;
  color: #592E1F;
- position: relative;
-  overflow: hidden;
-  transform-style: preserve-3d;
-  perspective: 1000px;
-  font-weight: bold;
+ overflow: hidden;
+ transform-style: preserve-3d;
+ perspective: 1000px;
+ font-weight: bold;
+
+
+
 
 }
 
@@ -42,8 +44,28 @@
 
 }
 
+.img-torta-alice{
+  object-fit: cover;
+  height: 250px;
+  object-position: 0 60%;
+
+}
+
+.img-torta-chapeleiro{
+  object-fit: cover;
+  height: 250px;
+  object-position: 0 86%;
+
+}
+.img-torta-coelho-branco{
+  object-fit: cover;
+  height: 250px;
+  object-position: 0 86%;
+
+}
+
 .card-largura{
-  max-width: 18rem;
+  max-width: 19rem;
 }
 
 

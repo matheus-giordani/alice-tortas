@@ -1,15 +1,15 @@
 <div class="container cor-especial ">
   <h1 class="text-center  pt-5">Faça você mesmo</h1>
-  <p class="text-center text-secondary pb-5">Monte sua torta da forma que desejar escolha sua massa e seu recheio e ta pronto</p>
+  <p class="text-center text-secondary pb-5">Monte sua torta da forma que desejar! escolha sua massa e seu recheio e tá pronto</p>
   <form  [formGroup]="form" (ngSubmit)="submit()">
     <div class="row">
 
       <div class="col-12 col-sm-2">
         <label for="exampleFormControlSelect1">Massa</label>
         <select class="form-control" id="exampleFormControlSelect1" formControlName="massa" required>
-          <option>Cookie</option>
-          <option>Cookie chocolate</option>
-          <option>Cookie Red Velvet</option>
+          <option>Invertida</option>
+          <option>Tradicional</option>
+          <option>Red Velvet</option>
           <option>Salgada</option>
 
         </select>
@@ -17,17 +17,18 @@
       <div class="col-8 col-sm-8">
         <label for="exampleFormControlSelect1">Recheio</label>
         <select class="form-control" formControlName="recheio">
-          <option>Chocolate ao leite</option>
-          <option>Chocolate meio-amargo</option>
-          <option>Chocolate branco</option>
-          <option>Doce de leite</option>
-          <option>Red Velvet</option>
+          <option>Café</option>
+          <option>Meio-amargo</option>
+          <option>Ao leite</option>
+          <option>Brigadeiro branco</option>
+          <option>Brigadeiro de cream cheese</option>
+          <option>Frango</option>
         </select>
       </div>
 
       <div class="col-4 col-sm-2">
         <label for="exampleInputPassword1">Quantidade</label>
-        <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Quantidade" formControlName="quantidade">
+        <input type="number" class="form-control" id="exampleInputPassword1" min="1" placeholder="Quantidade" formControlName="quantidade">
       </div>
 
     </div>
@@ -45,7 +46,7 @@
     </div>
 
       <div class="pt-2 justify-content-end">
-        <button type="submit" class="btn btn-cor-especial btn-lg" [disabled]="this.form.invalid">Submit</button>
+        <button type="submit" class="btn btn-cor-especial btn-lg" [disabled]="this.form.invalid">Enviar pedido</button>
 
       </div>
 
